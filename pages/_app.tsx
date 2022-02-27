@@ -11,8 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="relative flex h-screen w-screen flex-col items-center justify-center rounded-md bg-orange-300 pb-4">
-        <div className="fixed top-4 left-4 h-10 w-10 bg-orange-600 bg-cover [mask-image:url('/img/menu.svg')]"></div>
+      <div className="relative flex min-h-screen w-screen flex-col items-center justify-center rounded-md bg-orange-300 py-10 pb-4">
+        <div className="fixed top-4 left-4 rounded-full bg-orange-100 py-1 pr-2">
+          <div className="h-10 w-10 bg-orange-600 bg-cover [mask-image:url('/img/menu.svg')]"></div>
+        </div>
         <Component {...pageProps} />
       </div>
     </div>

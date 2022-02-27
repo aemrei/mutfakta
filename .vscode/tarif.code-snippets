@@ -1,0 +1,27 @@
+{
+  "Create tarif template": {
+    "scope": "markdown",
+    "prefix": "tarif",
+    "body": [
+      "---",
+      "title: ${1:title}",
+      "type: [${2:type}]",
+      "content: []",
+      "equipments: []",
+      "difficulty: 0.0",
+      "taste: 0.0",
+      "duration: 0",
+      "date: '2022-02-24T00:00:00.000Z'",
+      "---",
+      "",
+      "## Malzemeler",
+      "",
+      "* ${3:malzeme}",
+      "",
+      "## Yapılışı",
+      "",
+      "1. ${4:yapilis}",
+    ],
+    "description": "Add tarif template"
+  }
+}
