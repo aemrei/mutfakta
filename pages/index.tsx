@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import BigButton from "../components/BigButton";
+import BigButton from "@/components/BigButton";
 
 const Home: NextPage = () => {
   return (
