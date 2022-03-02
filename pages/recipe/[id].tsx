@@ -6,7 +6,7 @@ type RecipePageProps = {
   recipe: Recipe | null;
 };
 
-export default function RecipePage({ recipe }: RecipePageProps) {
+export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
   if (!recipe) {
     return <div>Loading...</div>;
   }
@@ -65,7 +65,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({
   params,
 }: RecipeStaticProps): Promise<{ props: RecipePageProps }> {
-  console.log({ params });
   const recipe = await getRecipe(params.id);
 
   return {

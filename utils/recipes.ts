@@ -92,3 +92,7 @@ export async function getRecipeIds(): Promise<string[]> {
 export function getRecipePathById(id: string): string {
   return path.join(RECIPES_DIR, `${id}.md`);
 }
+
+export function getRecipeTypes(): string[] {
+  return ["kahvalti", "yemek", "atistirmalik", "meze"];
+}
