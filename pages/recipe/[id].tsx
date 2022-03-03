@@ -1,12 +1,19 @@
 import Head from "next/head";
 import { getRecipe, getRecipeIds } from "@/utils/recipes";
 import Image from "next/image";
+import ToDoCheckbox, { ToDoState } from "@/components/ToDoCheckbox";
+import { useState } from "react";
 
 type RecipePageProps = {
   recipe: Recipe | null;
 };
 
 export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
+  const [state, setState] = useState(ToDoState.NotStarted);
+  const onChange = (state: ToDoState) => {
+    setState(state);
+  };
+
   if (!recipe) {
     return <div>Loading...</div>;
   }
@@ -26,19 +33,23 @@ export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
         </div>
         <p className="text-xs">{recipe.description}</p>
         <div className="">
-          <h2 className="mt-5 font-bold">Ingredients</h2>
+          <h2 className="mt-5 font-bold">Malzemeler</h2>
           <ul>
             {recipe.ingredients.map((ingredient, index) => (
               <li key={index} className="my-2">
-                {ingredient}
+                <div className="relative">
+                  <ToDoCheckbox state={state} onChange={onChange} text={ingredient} />
+                </div>
               </li>
             ))}
           </ul>
-          <h2 className="mt-5 font-bold">Instructions</h2>
+          <h2 className="mt-5 font-bold">Yapılışı</h2>
           <ol>
             {recipe.instructions.map((instruction, index) => (
               <li key={index} className="my-2">
-                {instruction}
+                <div className="relative">
+                  <ToDoCheckbox state={state} onChange={onChange} text={instruction} />
+                </div>
               </li>
             ))}
           </ol>
