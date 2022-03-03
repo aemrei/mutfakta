@@ -4,6 +4,9 @@ import { useRouter } from "next/router";
 import NextLink from "next/link";
 import Image from "next/image";
 import KnifeSVG from "@/components/KnifeSVG";
+import { useDispatch } from "react-redux";
+import { recipeSlice } from "store/RecipeSlice";
+import { menuSlice } from "store/MenuSlice";
 
 type SearchPageProps = {
   recipeList: Recipe[] | null;
@@ -11,6 +14,9 @@ type SearchPageProps = {
 
 export default function SearchPage({ recipeList }: SearchPageProps): JSX.Element {
   const router = useRouter();
+  const { type } = router.query;
+  const dispatch = useDispatch();
+  dispatch(recipeSlice.actions.setRecipeList(recipeList || []));
 
   return (
     <div className="m-10">
@@ -39,6 +45,7 @@ export default function SearchPage({ recipeList }: SearchPageProps): JSX.Element
                           className="rounded bg-green-700 px-1 pl-2 pr-0 font-bold text-orange-200 hover:bg-green-600"
                           onClick={(event) => {
                             event.preventDefault();
+                            dispatch(menuSlice.actions.addItem(recipe));
                           }}
                         >
                           Add

@@ -9,11 +9,12 @@ export enum ToDoState {
 type ToDoCheckboxProps = {
   state: ToDoState;
   text: string;
+  showBox: boolean;
   onChange: (state: ToDoState) => void;
 };
 
 export default function ToDoCheckbox(props: ToDoCheckboxProps) {
-  const { state, onChange, text } = props;
+  const { state, onChange, showBox, text } = props;
   const stateUi: { state: ToDoState; ui: React.ReactChild }[] = [
     {
       state: ToDoState.NotStarted,
@@ -51,7 +52,7 @@ export default function ToDoCheckbox(props: ToDoCheckboxProps) {
 
   return (
     <div className="flex align-middle">
-      {StateUiItem} <span className="ml-1.5">{text}</span>
+      {showBox && StateUiItem} <span className="ml-1.5">{text}</span>
     </div>
   );
 }

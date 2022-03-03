@@ -3,12 +3,18 @@ import { getRecipe, getRecipeIds } from "@/utils/recipes";
 import Image from "next/image";
 import ToDoCheckbox, { ToDoState } from "@/components/ToDoCheckbox";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { MenuItem, menuSlice } from "store/MenuSlice";
 
 type RecipePageProps = {
   recipe: Recipe | null;
 };
 
 export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
+  const dispatch = useDispatch();
+  const menuItem = useSelector<any, MenuItem>((state) =>
+    state.menu.items.find((item: { id: string | undefined }) => item.id === recipe?.id),
+  );
   const [state, setState] = useState(ToDoState.NotStarted);
   const onChange = (state: ToDoState) => {
     setState(state);
@@ -38,7 +44,16 @@ export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
             {recipe.ingredients.map((ingredient, index) => (
               <li key={index} className="my-2">
                 <div className="relative">
-                  <ToDoCheckbox state={state} onChange={onChange} text={ingredient} />
+                  <ToDoCheckbox
+                    state={menuItem?.ingredientsCompletions[index] || ToDoState.NotStarted}
+                    onChange={(value) =>
+                      dispatch(
+                        menuSlice.actions.setIngredientState({ id: recipe.id, index, value }),
+                      )
+                    }
+                    showBox={!!menuItem}
+                    text={ingredient}
+                  />
                 </div>
               </li>
             ))}
@@ -48,7 +63,16 @@ export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
             {recipe.instructions.map((instruction, index) => (
               <li key={index} className="my-2">
                 <div className="relative">
-                  <ToDoCheckbox state={state} onChange={onChange} text={instruction} />
+                  <ToDoCheckbox
+                    state={menuItem?.instructionsCompletions[index] || ToDoState.NotStarted}
+                    onChange={(value) =>
+                      dispatch(
+                        menuSlice.actions.setInstructionState({ id: recipe.id, index, value }),
+                      )
+                    }
+                    showBox={!!menuItem}
+                    text={instruction}
+                  />
                 </div>
               </li>
             ))}
