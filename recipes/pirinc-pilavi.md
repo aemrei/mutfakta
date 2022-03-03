@@ -9,6 +9,8 @@ taste: 0.5
 duration: 30
 date: "2022-02-27T05:35:07.322Z"
 image: pirinc-pilavi.jpg
+yt: []
+source: []
 ---
 
 ## İçindekiler

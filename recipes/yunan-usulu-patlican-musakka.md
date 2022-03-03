@@ -8,6 +8,9 @@ difficulty: 0.8
 taste: 1
 duration: 70
 date: "2022-02-24T05:35:07.322Z"
+image: 
+yt: []
+source: []
 ---
 
 ## Malzemeler
