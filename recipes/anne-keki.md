@@ -1,16 +1,13 @@
 ---
 title: Anne Keki
 description: Güzel bir kek
-type: [atistirma, kahvalti]
-content: [hamurisi]
-equipments: [firin]
+tags: [atistirma, kahvalti, hamurisi, firin]
 difficulty: 0.5
 taste: 0.6
 duration: 40
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler

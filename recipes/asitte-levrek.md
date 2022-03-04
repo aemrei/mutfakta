@@ -1,26 +1,25 @@
 ---
 title: Asitte Levrek
 description: Yavaş pişirilmiş levrek
-type: [meze]
-content: [balik]
-equipments: [buzdolabi]
+tags: [meze, balik, buzdolabi]
 difficulty: 0.9
 taste: 0.5
 duration: 15
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: [oOk1RrqIDQ8]
-source: []
 ---
 
 ## Malzemeler
+
 - balık (levrek)
 - 10 adet limon
 - 10 diş sarımsak
-- *tuz*
+- _tuz_
 - stretch film
 
 ### Sosu için
+
 - sıvı yağ (zeytinyağı)
 - soğan
 - sarımsak
@@ -37,7 +36,7 @@ source: []
 7. Karışımı, üzerini örtecek şekilde balıkların bulunduğu kaba dökün.
 8. Üzerini hava almayacak şekilde stretch film ile kaplayın.
 9. Çabuk soğutmak için yaklaşık yarım saat buzlukta beklesin.
-10. Donmadan buzluktan* aldıktan sonra 1 - 1.5 saat buzdolabının** normal kesiminde dinlensin.
+10. Donmadan buzluktan\* aldıktan sonra 1 - 1.5 saat buzdolabının\*\* normal kesiminde dinlensin.
 
 ### Sosun hazırlanışı
 

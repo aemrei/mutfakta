@@ -1,16 +1,13 @@
 ---
 title: Yunan Usulü Patlıcan Musakka
 description: Fırında yapılan çıtır çıtır bir patlıcan yemeği
-type: [yemek]
-content: [et]
-equipments: [firin]
+tags: [yemek, kiyma, firin]
 difficulty: 0.8
 taste: 1
 duration: 70
 date: "2022-02-24T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler

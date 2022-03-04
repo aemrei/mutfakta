@@ -1,20 +1,15 @@
 ---
 title: Biberli Ekmek
-description: 
-type: [kahvalti]
-content: []
-equipments: []
+description:
+tags: [kahvalti, refika]
 difficulty: 0.1
 taste: 0.3
 duration: 15
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: [refika]
 ---
 
 ## Malzemeler
 
-
 ## Yapılışı
-

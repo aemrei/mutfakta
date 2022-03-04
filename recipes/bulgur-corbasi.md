@@ -1,19 +1,17 @@
 ---
 title: Bulgur çorbası
 description: Bulgur çorbası
-type: [yemek,corba]
-content: [bakliyat]
-equipments: [ocak]
+tags: [yemek, corba, bakliyat, ocak]
 difficulty: 0.1
 taste: 0.3
 duration: 15
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler
+
 - 2 YK tereyağı
 - 1 adet soğan (kuru) (yemeklik doğranmış)
 - 4 diş sarımsak (pirinç tanesi şeklinde doğranmış)
@@ -24,7 +22,7 @@ source: []
 - 1 ÇK nane (kuru)
 - 1 ÇK karabiber
 - 1 ÇK tuz
-- 1,5 litre *tavuk suyu*
+- 1,5 litre _tavuk suyu_
 - 10 dal maydanoz (kıyılmış)
 
 ## Yapılışı

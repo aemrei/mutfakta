@@ -1,19 +1,17 @@
 ---
 title: Bazlama Pizza
 description: Kahvaltılık doyurucu pizza
-type: [kahvalti]
-content: [hamurisi]
-equipments: [firin]
+tags: [kahvalti, hamurisi, firin]
 difficulty: 0.3
 taste: 0.3
 duration: 25
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler
+
 - ekmek (bazlama)
 - peynir (kaşar)
 - zeytin

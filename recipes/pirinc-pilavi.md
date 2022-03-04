@@ -1,16 +1,13 @@
 ---
 title: Pirinç Pilavı
 description: En bilinen pirinç pilavı
-type: [yemek]
-content: [bakliyat]
-equipments: [tencere]
+tags: [yemek, bakliyat, tencere]
 difficulty: 0.3
 taste: 0.5
 duration: 30
 date: "2022-02-27T05:35:07.322Z"
 image: pirinc-pilavi.jpg
 yt: []
-source: []
 ---
 
 ## İçindekiler

@@ -1,25 +1,22 @@
 ---
 title: Brokoli Haşlama
 description: Sarımsak soslu brokoli
-type: [yemek,atistirma]
-content: [sebze]
-equipments: [ocak]
+tags: [yemek, atistirma, sebze, ocak]
 difficulty: 0.1
 taste: 0.3
 duration: 15
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler
+
 - 1 kilo brokoli
 - sarımsak
 - tuz
 - limon
 - sıvı yağ (zeytinyağı)
-
 
 ## Yapılışı
 

@@ -17,12 +17,14 @@ export async function getRecipes(): Promise<Recipe[]> {
           reject(err);
         } else {
           const recipes: Recipe[] = [];
-          files.forEach((file) => {
-            const recipe = readRecipe(file);
-            if (recipe) {
-              recipes.push(recipe);
-            }
-          });
+          files
+            .filter((x) => x !== "template.md")
+            .forEach((file) => {
+              const recipe = readRecipe(file);
+              if (recipe) {
+                recipes.push(recipe);
+              }
+            });
           resolve(recipes);
         }
       });
@@ -83,7 +85,7 @@ export async function getRecipeIds(): Promise<string[]> {
       if (err) {
         reject(err);
       } else {
-        resolve(files.map((file) => file.replace(".md", "")));
+        resolve(files.filter((x) => x !== "template.md").map((file) => file.replace(".md", "")));
       }
     });
   });

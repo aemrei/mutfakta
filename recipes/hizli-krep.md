@@ -1,16 +1,13 @@
 ---
 title: Hızlı Krep
 description: Ekmek olmadığında 10dkda hazırlanan hızlı ekmek
-type: [kahvalti, hizli]
-content: [hamurisi]
-equipments: [tava]
+tags: [kahvalti, hizli, hamurisi, tava]
 difficulty: 0.1
 taste: 0.5
 duration: 10
 date: "2022-02-24T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler

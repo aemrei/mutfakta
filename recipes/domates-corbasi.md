@@ -1,19 +1,17 @@
 ---
 title: Domates Çorbası
 description: Hızlı ve lezzetli
-type: [yemek,corba]
-content: []
-equipments: [ocak]
+tags: [yemek, corba, ocak]
 difficulty: 0.3
 taste: 0.5
 duration: 25
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler
+
 - 4 domates
 - 2 YK un (buğday)
 - 4 YK sıvı yağ

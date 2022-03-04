@@ -1,16 +1,13 @@
 ---
 title: Bulgur Pilavı
 description: Meyhane usulü bulgur pilavı
-type: [yemek,pilav]
-content: [bakliyat]
-equipments: [ocak]
+tags: [yemek, pilav, bakliyat, ocak]
 difficulty: 0.4
 taste: 0.6
 duration: 45
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler
@@ -36,4 +33,3 @@ source: []
 6. Üzerine su ekleyerek karıştırın ve kapağını kapatarak orta ateşte suyunu çekene kadar pişirmeye bırakın.
 7. Ortalama 10-15 dakika sonra suyunu çeken bulgur pilavının altını kapatın ve oda sıcaklığında 20 dakika demlenmeye bırakın.
 8. Demlenen pilavınızı güzelce karıştırın ve servis edin.
-

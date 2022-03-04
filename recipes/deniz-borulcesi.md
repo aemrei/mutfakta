@@ -1,19 +1,17 @@
 ---
 title: Deniz Börülcesi
 description: Börülce mezesi
-type: [meze]
-content: []
-equipments: [ocak]
+tags: [meze, ocak]
 difficulty: 0.4
 taste: 0.6
 duration: 15
 date: "2022-03-03T05:35:07.322Z"
-image: 
+image:
 yt: []
-source: []
 ---
 
 ## Malzemeler
+
 - 1 demet börülce (deniz)
 - 3 diş sarımsak
 - 1/2 çay bardağı sıvı yağ (zeytinyağı)
@@ -23,10 +21,10 @@ source: []
 
 ## Yapılışı
 
-1. Tencere dolusu *suyu* kaynatın
+1. Tencere dolusu _suyu_ kaynatın
 2. İçine 3 diş sarımsağı (kabuğunu soymaya gerek yok) kaynar suya atın.
 3. Börülceleri kaynar suya atın, bu şekilde 7-8 dk haşlanacak.
-4. Çıkardığınız börülceleri saplarından ayırdıktan sonra hazırlanan *sosun* bir kısmıyla harmanlayın.
+4. Çıkardığınız börülceleri saplarından ayırdıktan sonra hazırlanan _sosun_ bir kısmıyla harmanlayın.
 5. Börülceleri tabağa aldıktan sonra kalan sostan dilediğiniz kadarını börülcelerin üzerine dökün.
 
 ### Sosunun hazırlanışı:
