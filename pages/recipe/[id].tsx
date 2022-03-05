@@ -5,6 +5,8 @@ import ToDoCheckbox, { ToDoState } from "@/components/ToDoCheckbox";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MenuItem, menuSlice } from "store/MenuSlice";
+import AddButton from "@/components/AddButton";
+import CompleteButton from "@/components/CompleteButton";
 
 type RecipePageProps = {
   recipe: Recipe | null;
@@ -38,6 +40,9 @@ export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
           </h1>
         </div>
         <p className="text-xs">{recipe.description}</p>
+        {!menuItem && (
+          <AddButton text="Ekle" onClick={() => dispatch(menuSlice.actions.addItem(recipe))} />
+        )}
         <div className="">
           <h2 className="mt-5 font-bold">Malzemeler</h2>
           <ul>
@@ -79,6 +84,14 @@ export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
           </ol>
         </div>
       </article>
+      <div className="mt-5 flex justify-around">
+        {!!menuItem && (
+          <CompleteButton
+            text="Tamamla"
+            onClick={() => dispatch(menuSlice.actions.removeItem(recipe))}
+          />
+        )}
+      </div>
     </div>
   );
 }

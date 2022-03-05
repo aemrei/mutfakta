@@ -20,7 +20,7 @@ export default function ToDoCheckbox(props: ToDoCheckboxProps) {
       state: ToDoState.NotStarted,
       ui: (
         <div
-          className="inline-block h-6 w-6 cursor-pointer rounded-md bg-gray-400"
+          className="inline-block h-6 w-6 shrink-0 cursor-pointer rounded-md bg-gray-400"
           onClick={(event) => onChange(ToDoState.InProgress)}
         />
       ),
@@ -29,7 +29,7 @@ export default function ToDoCheckbox(props: ToDoCheckboxProps) {
       state: ToDoState.InProgress,
       ui: (
         <div
-          className="inline-block h-6 w-6 cursor-pointer rounded-md bg-orange-600"
+          className="inline-block h-6 w-6 shrink-0 cursor-pointer rounded-md bg-orange-600"
           onClick={(event) => onChange(ToDoState.Done)}
         />
       ),
@@ -38,7 +38,7 @@ export default function ToDoCheckbox(props: ToDoCheckboxProps) {
       state: ToDoState.Done,
       ui: (
         <div
-          className="inline-block h-6 w-6 cursor-pointer rounded-md bg-green-600"
+          className="inline-block h-6 w-6 shrink-0 cursor-pointer rounded-md bg-green-600"
           onClick={(event) => onChange(ToDoState.NotStarted)}
         />
       ),

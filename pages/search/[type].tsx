@@ -3,10 +3,10 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
 import Image from "next/image";
-import KnifeSVG from "@/components/KnifeSVG";
 import { useDispatch } from "react-redux";
 import { recipeSlice } from "store/RecipeSlice";
 import { menuSlice } from "store/MenuSlice";
+import AddButton from "@/components/AddButton";
 
 type SearchPageProps = {
   recipeList: Recipe[] | null;
@@ -41,16 +41,10 @@ export default function SearchPage({ recipeList }: SearchPageProps): JSX.Element
                         <p className="text-xs">{recipe.description}</p>
                       </div>
                       <div className="m-1 flex justify-end text-xs">
-                        <button
-                          className="rounded bg-green-700 px-1 pl-2 pr-0 font-bold text-orange-200 hover:bg-green-600"
-                          onClick={(event) => {
-                            event.preventDefault();
-                            dispatch(menuSlice.actions.addItem(recipe));
-                          }}
-                        >
-                          Add
-                          <KnifeSVG className="inline" />
-                        </button>
+                        <AddButton
+                          text="Ekle"
+                          onClick={() => dispatch(menuSlice.actions.addItem(recipe))}
+                        />
                       </div>
                     </div>
                   </a>

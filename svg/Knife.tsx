@@ -1,8 +1,8 @@
-type KnifeSVGProp = {
+type KnifeProp = {
   className?: string;
 };
 
-export default function KnifeSVG({ className }: KnifeSVGProp): JSX.Element {
+export default function Knife({ className }: KnifeProp): JSX.Element {
   return (
     <svg
       width="20"
