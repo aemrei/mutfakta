@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
 import Head from "next/head";
 import { store } from "../store";
+import NextLink from "next/link";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,9 +15,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <div className="relative flex min-h-screen w-screen flex-col items-center justify-center rounded-md bg-orange-300 py-10 pb-4">
-        <div className="fixed top-4 left-4 rounded-full bg-orange-100 py-1 pr-2">
-          <div className="h-10 w-10 bg-orange-600 bg-cover [mask-image:url('/img/menu.svg')]"></div>
-        </div>
+        <NextLink href="/" passHref>
+          <a>
+            <div className="fixed top-4 left-4 rounded-full bg-orange-100 py-1 pr-2">
+              <div className="h-10 w-10 bg-orange-600 bg-cover [mask-image:url('/img/menu.svg')]"></div>
+            </div>
+          </a>
+        </NextLink>
         <Component {...pageProps} />
       </div>
     </Provider>

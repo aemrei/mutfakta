@@ -3,9 +3,9 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
 import Image from "next/image";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { recipeSlice } from "store/RecipeSlice";
-import { menuSlice } from "store/MenuSlice";
+import { MenuItem, menuSlice } from "store/MenuSlice";
 import AddButton from "@/components/AddButton";
 
 type SearchPageProps = {
@@ -16,6 +16,7 @@ export default function SearchPage({ recipeList }: SearchPageProps): JSX.Element
   const router = useRouter();
   const { type } = router.query;
   const dispatch = useDispatch();
+  const menuItems = useSelector<any, MenuItem[]>((state) => state.menu.items);
   dispatch(recipeSlice.actions.setRecipeList(recipeList || []));
 
   return (
@@ -41,10 +42,14 @@ export default function SearchPage({ recipeList }: SearchPageProps): JSX.Element
                         <p className="text-xs">{recipe.description}</p>
                       </div>
                       <div className="m-1 flex justify-end text-xs">
-                        <AddButton
-                          text="Ekle"
-                          onClick={() => dispatch(menuSlice.actions.addItem(recipe))}
-                        />
+                        {!menuItems.find(
+                          (item: { id: string | undefined }) => item.id === recipe.id,
+                        ) && (
+                          <AddButton
+                            text="Ekle"
+                            onClick={() => dispatch(menuSlice.actions.addItem(recipe))}
+                          />
+                        )}
                       </div>
                     </div>
                   </a>

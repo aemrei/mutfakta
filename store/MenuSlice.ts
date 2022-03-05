@@ -3,6 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export type MenuItem = {
   id: string;
+  title: string;
+  image: string;
   ingredientsCompletions: ToDoState[];
   instructionsCompletions: ToDoState[];
 };
@@ -12,23 +14,32 @@ const initialState = {
 };
 
 type MenuState = typeof initialState;
-type MenuAction = {
+type AddMenuAction = {
   payload: Recipe;
 };
 
-const addMenuItem = (state: MenuState, action: MenuAction) => {
-  const { ingredients, instructions, id } = action.payload;
+const addMenuItem = (state: MenuState, action: AddMenuAction) => {
+  const { ingredients, instructions, id, image, title } = action.payload;
   const ingredientsCompletions = ingredients.map(() => ToDoState.NotStarted);
   const instructionsCompletions = instructions.map(() => ToDoState.NotStarted);
+  if (state.items.find((item) => item.id === id)) {
+    return state;
+  }
   state.items.push({
     id,
+    title,
+    image,
     ingredientsCompletions,
     instructionsCompletions,
   });
 };
 
-const removeMenuItem: (state: MenuState, action: MenuAction) => void = (state, action) => {
-  const { id } = action.payload;
+type RemoveMenuAction = {
+  payload: string;
+};
+
+const removeMenuItem: (state: MenuState, action: RemoveMenuAction) => void = (state, action) => {
+  const id = action.payload;
   const index = state.items.findIndex((item) => item.id === id);
   if (index !== -1) {
     state.items.splice(index, 1);

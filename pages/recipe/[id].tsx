@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { MenuItem, menuSlice } from "store/MenuSlice";
 import AddButton from "@/components/AddButton";
 import CompleteButton from "@/components/CompleteButton";
+import MenuList from "@/components/MenuList";
 
 type RecipePageProps = {
   recipe: Recipe | null;
@@ -88,10 +89,11 @@ export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
         {!!menuItem && (
           <CompleteButton
             text="Tamamla"
-            onClick={() => dispatch(menuSlice.actions.removeItem(recipe))}
+            onClick={() => dispatch(menuSlice.actions.removeItem(recipe.id))}
           />
         )}
       </div>
+      <MenuList />
     </div>
   );
 }
