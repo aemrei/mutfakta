@@ -14,10 +14,11 @@ type SearchPageProps = {
 
 export default function SearchPage({ recipeList }: SearchPageProps): JSX.Element {
   const router = useRouter();
-  const { type } = router.query;
+  const { type = [] } = router.query;
   const dispatch = useDispatch();
   const menuItems = useSelector<any, MenuItem[]>((state) => state.menu.items);
   dispatch(recipeSlice.actions.setRecipeList(recipeList || []));
+  const searchResult = (recipeList || []).filter((recipe) => recipe.tags.includes(type + ""));
 
   return (
     <div className="m-10">
@@ -28,8 +29,8 @@ export default function SearchPage({ recipeList }: SearchPageProps): JSX.Element
       </Head>
       <div>
         <ul className="flex flex-wrap items-center justify-center">
-          {recipeList ? (
-            recipeList.map((recipe) => (
+          {searchResult ? (
+            searchResult.map((recipe) => (
               <li key={recipe.id} className="w-1/3 sm:w-1/4 md:w-1/5 lg:w-1/6">
                 <NextLink href={`/recipe/${recipe.id}`} passHref>
                   <a>

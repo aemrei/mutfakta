@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="relative flex min-h-screen w-screen flex-col items-center justify-center rounded-md bg-orange-300 py-10 pb-4">
         <NextLink href="/" passHref>
           <a>
-            <div className="fixed top-4 left-4 rounded-full bg-orange-100 py-1 pr-2">
+            <div className="fixed top-4 left-4 z-50 rounded-full border-2 border-orange-400 bg-orange-100 py-1 pr-2">
               <div className="h-10 w-10 bg-orange-600 bg-cover [mask-image:url('/img/menu.svg')]"></div>
             </div>
           </a>

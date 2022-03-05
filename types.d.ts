@@ -2,9 +2,7 @@ type Recipe = {
   id: string;
   title: string;
   description: string;
-  type: string[];
-  content: string[];
-  equipments: string[];
+  tags: string[];
   difficulty: number;
   taste: number;
   duration: number;

@@ -42,7 +42,11 @@ export default function RecipePage({ recipe }: RecipePageProps): JSX.Element {
         </div>
         <p className="text-xs">{recipe.description}</p>
         {!menuItem && (
-          <AddButton text="Ekle" onClick={() => dispatch(menuSlice.actions.addItem(recipe))} />
+          <AddButton
+            className="mt-3"
+            text="Ekle"
+            onClick={() => dispatch(menuSlice.actions.addItem(recipe))}
+          />
         )}
         <div className="">
           <h2 className="mt-5 font-bold">Malzemeler</h2>

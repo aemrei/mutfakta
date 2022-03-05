@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <BigButton icon="/img/meal.png" href="/search/yemek" onClick={() => {}}>
         Yemek
       </BigButton>
-      <BigButton icon="/img/snacks.png" href="/search/atistirmalik" onClick={() => {}}>
+      <BigButton icon="/img/snacks.png" href="/search/atistirma" onClick={() => {}}>
         Atıştırmalık
       </BigButton>
       <BigButton icon="/img/meze.png" href="/search/meze" onClick={() => {}}>

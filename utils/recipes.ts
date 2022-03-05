@@ -96,5 +96,5 @@ export function getRecipePathById(id: string): string {
 }
 
 export function getRecipeTypes(): string[] {
-  return ["kahvalti", "yemek", "atistirmalik", "meze"];
+  return ["kahvalti", "yemek", "atistirma", "meze"];
 }
