@@ -6,7 +6,7 @@ difficulty: 0.3
 taste: 0.5
 duration: 25
 date: "2022-03-03T05:35:07.322Z"
-image:
+image: kisir.jpeg
 yt: []
 ---
 
