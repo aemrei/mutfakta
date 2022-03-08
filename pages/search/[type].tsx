@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { recipeSlice } from "store/RecipeSlice";
 import { MenuItem, menuSlice } from "store/MenuSlice";
 import AddButton from "@/components/AddButton";
+import FilterBar from "@/components/FilterBar";
 
 type SearchPageProps = {
   recipeList: Recipe[] | null;
@@ -62,6 +63,7 @@ export default function SearchPage({ recipeList }: SearchPageProps): JSX.Element
           )}
         </ul>
       </div>
+      <FilterBar />
     </div>
   );
 }
