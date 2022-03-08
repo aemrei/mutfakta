@@ -2,20 +2,20 @@ import { FilterState } from "@/components/FilterCheckbox";
 import { createSlice } from "@reduxjs/toolkit";
 
 export type FilterConditions = {
-  [key: string]: FilterState;
+  [id: string]: FilterState;
 };
 
 const setFilter = (
   state: FilterConditions,
-  action: { payload: { key: string; value: FilterState } },
+  action: { payload: { id: string; value: FilterState } },
 ) => {
-  const { key, value } = action.payload;
-  state[key] = value;
+  const { id, value } = action.payload;
+  state[id] = value;
 };
 
 const clearFilter = (state: FilterConditions) => {
-  Object.keys(state).forEach((key) => {
-    state[key] = FilterState.Ignore;
+  Object.keys(state).forEach((id) => {
+    state[id] = FilterState.Ignore;
   });
 };
 

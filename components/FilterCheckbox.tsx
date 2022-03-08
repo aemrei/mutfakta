@@ -51,7 +51,7 @@ export default function FilterCheckbox(props: FilterCheckboxProps) {
 
   return (
     <div className="flex align-middle">
-      {StateUiItem} <span className="ml-1.5">{text}</span>
+      {StateUiItem} <span className="ml-1.5 whitespace-nowrap">{text}</span>
     </div>
   );
 }
