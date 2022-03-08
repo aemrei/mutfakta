@@ -2,7 +2,12 @@ import { FilterState } from "@/components/FilterCheckbox";
 import { createSlice } from "@reduxjs/toolkit";
 
 export type FilterConditions = {
-  [id: string]: FilterState;
+  searchQuery: string;
+  tags: { [id: string]: FilterState };
+};
+
+const setSearchQuery = (state: FilterConditions, action: { payload: string }) => {
+  state.searchQuery = action.payload;
 };
 
 const setFilter = (
@@ -10,21 +15,23 @@ const setFilter = (
   action: { payload: { id: string; value: FilterState } },
 ) => {
   const { id, value } = action.payload;
-  state[id] = value;
+  state.tags[id] = value;
 };
 
 const clearFilter = (state: FilterConditions) => {
-  Object.keys(state).forEach((id) => {
-    state[id] = FilterState.Ignore;
+  Object.keys(state.tags).forEach((id) => {
+    state.tags[id] = FilterState.Ignore;
   });
+  state.searchQuery = "";
 };
 
-const initialState: FilterConditions = {};
+const initialState: FilterConditions = { searchQuery: "", tags: {} };
 
 export const filterSlice = createSlice({
   name: "filter",
   initialState,
   reducers: {
+    setSearchQuery,
     setFilter,
     clearFilter,
   },

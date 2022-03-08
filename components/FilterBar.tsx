@@ -13,7 +13,8 @@ type FilterItemProps = {
 
 function FilterItem({ id, text }: FilterItemProps) {
   const dispatch = useDispatch();
-  const state = useSelector<any, FilterState>((state) => state.filter[id]) || FilterState.Ignore;
+  const state =
+    useSelector<any, FilterState>((state) => state.filter.tags[id]) || FilterState.Ignore;
   return (
     <FilterCheckbox
       state={state}
@@ -21,6 +22,18 @@ function FilterItem({ id, text }: FilterItemProps) {
       onChange={(value) => {
         dispatch(filterSlice.actions.setFilter({ id, value }));
       }}
+    />
+  );
+}
+
+function SearchBox() {
+  const dispatch = useDispatch();
+  const searchQuery = useSelector<any, string>((state) => state.filter.searchQuery);
+  return (
+    <input
+      className="flex-grow bg-transparent outline-none"
+      value={searchQuery}
+      onChange={(event) => dispatch(filterSlice.actions.setSearchQuery(event.target.value))}
     />
   );
 }
@@ -49,6 +62,7 @@ const FilterSections = [
     items: [
       { id: "sicak", text: "Sıcak" },
       { id: "soguk", text: "Soguk" },
+      { id: "tatli", text: "Tatlı" },
       { id: "vegan", text: "Vegan" },
     ],
   },
@@ -86,7 +100,7 @@ function FilterBar() {
         )}
       >
         <div className="mx-4 my-2 flex h-10 w-full items-center justify-between rounded-lg border-2 bg-orange-200 py-1 pl-3 pr-1">
-          <input className="flex-grow bg-transparent outline-none" />
+          <SearchBox />
           <FilterButton onClick={() => setOpened(!opened)} />
         </div>
         <div className={classNames("overflow-x-scroll px-3", { hidden: !opened })}>
