@@ -1,3 +1,4 @@
+import { filterSections } from "@/utils/filtering";
 import classNames from "classnames";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -38,45 +39,6 @@ function SearchBox() {
   );
 }
 
-const FilterSections = [
-  {
-    title: "Öğün",
-    items: [
-      { id: "yemek", text: "Yemek" },
-      { id: "kahvalti", text: "Kahvaltı" },
-      { id: "atistirma", text: "Atıştırma" },
-      { id: "meze", text: "Meze" },
-    ],
-  },
-  {
-    title: "İçindekiler",
-    items: [
-      { id: "et", text: "Et" },
-      { id: "sebze", text: "Sebze" },
-      { id: "sut", text: "Süt" },
-      { id: "meyve", text: "Meyve" },
-    ],
-  },
-  {
-    title: "Tür",
-    items: [
-      { id: "sicak", text: "Sıcak" },
-      { id: "soguk", text: "Soguk" },
-      { id: "tatli", text: "Tatlı" },
-      { id: "vegan", text: "Vegan" },
-    ],
-  },
-  {
-    title: "Ekipman",
-    items: [
-      { id: "firin", text: "Fırın" },
-      { id: "ocak", text: "Ocak" },
-      { id: "buzdolabı", text: "Buzdolabı" },
-      { id: "tostmakinesi", text: "Tost Makinesi" },
-    ],
-  },
-];
-
 function FilterBar() {
   const [opened, setOpened] = React.useState(false);
 
@@ -104,7 +66,7 @@ function FilterBar() {
           <FilterButton onClick={() => setOpened(!opened)} />
         </div>
         <div className={classNames("overflow-x-scroll px-3", { hidden: !opened })}>
-          {FilterSections.map((section) => (
+          {filterSections.map((section) => (
             <div key={section.title} className="mb-4 flex flex-col">
               <h3 className="mt-3 font-bold">{section.title}</h3>
               <div className="mt-1 flex gap-3 overflow-y-scroll ">

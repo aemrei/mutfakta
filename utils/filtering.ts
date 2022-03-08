@@ -1,6 +1,52 @@
 import { FilterState } from "@/components/FilterCheckbox";
 import { FilterConditions } from "store/FilterSlice";
 
+export const filterSections = [
+  {
+    title: "Öğün",
+    items: [
+      { id: "yemek", text: "Yemek" },
+      { id: "kahvalti", text: "Kahvaltı" },
+      { id: "atistirma", text: "Atıştırma" },
+      { id: "meze", text: "Meze" },
+    ],
+  },
+  {
+    title: "İçindekiler",
+    items: [
+      { id: "et", text: "Et" },
+      { id: "sebze", text: "Sebze" },
+      { id: "sut", text: "Süt" },
+      { id: "meyve", text: "Meyve" },
+    ],
+  },
+  {
+    title: "Tür",
+    items: [
+      { id: "sicak", text: "Sıcak" },
+      { id: "soguk", text: "Soguk" },
+      { id: "tatli", text: "Tatlı" },
+      { id: "vegan", text: "Vegan" },
+    ],
+  },
+  {
+    title: "Ekipman",
+    items: [
+      { id: "firin", text: "Fırın" },
+      { id: "ocak", text: "Ocak" },
+      { id: "buzdolabı", text: "Buzdolabı" },
+      { id: "tostmakinesi", text: "Tost Makinesi" },
+    ],
+  },
+];
+
+const tagCategoryMap = filterSections.reduce((acc: { [id: string]: string }, section) => {
+  section.items.forEach((item) => {
+    acc[item.id] = section.title;
+  });
+  return acc;
+}, {});
+
 export function getFilteredRecipes(recipes: Recipe[], filter: FilterConditions) {
   const { searchQuery, tags } = filter;
   const searchRegex = new RegExp(searchQuery, "i");
@@ -12,16 +58,25 @@ export function getFilteredRecipes(recipes: Recipe[], filter: FilterConditions) 
     const concatenated = [title, description, ingredients, instructions].flat().join(" ");
     return concatenated.match(searchRegex);
   });
+
+  debugger;
   return filteredRecipes.filter((recipe) => {
+    const categoryMatches = recipe.tags.reduce((acc, tagId) => {
+      if (tags[tagId] === FilterState.Include) {
+        acc[tagCategoryMap[tagId]] = true;
+      }
+      return acc;
+    }, {} as { [category: string]: boolean });
+
     return Object.entries(tags).every((entry) => {
       const [key, value] = entry;
       if (value === FilterState.Ignore) {
         return true;
       }
-      if (value === FilterState.Include) {
-        return recipe.tags.includes(key);
+      if (value === FilterState.Exclude) {
+        return !recipe.tags.includes(key);
       }
-      return !recipe.tags.includes(key);
+      return categoryMatches[tagCategoryMap[key]];
     });
   });
 }
