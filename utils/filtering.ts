@@ -22,6 +22,7 @@ export const filterSections = [
       { id: "sut", text: "Süt Ürünleri" },
       { id: "yumurta", text: "Yumurta" },
       { id: "meyve", text: "Meyve" },
+      { id: "hamurisi", text: "Hamur İşi" },
     ],
   },
   {
@@ -34,6 +35,7 @@ export const filterSections = [
       { id: "sicak", text: "Sıcak" },
       { id: "soguk", text: "Soğuk" },
       { id: "diyet", text: "Diyet" },
+      { id: "premium", text: "Premium" },
     ],
   },
   {

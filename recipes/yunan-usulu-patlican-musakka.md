@@ -1,7 +1,7 @@
 ---
 title: Yunan Usulü Patlıcan Musakka
 description: Fırında yapılan çıtır çıtır bir patlıcan yemeği
-tags: [yemek, kiyma, firin]
+tags: [yemek, kiyma, premium, firin]
 difficulty: 0.8
 taste: 1
 duration: 70
@@ -23,7 +23,7 @@ yt: []
 - 700 gr kıyma
 - 400 gr domates
 - 2 yemek kaşığı salça
-- 1 su bardağı *et suyu*
+- 1 su bardağı _et suyu_
 - 1,5 tatlı kaşığı şeker
 - 2 tatlı kaşığı kekik ya da mercanköşk
 - 3/4 tatlı kaşığı tuz

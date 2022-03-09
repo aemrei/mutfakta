@@ -1,7 +1,7 @@
 ---
-title: Lazanya
-description: Fırında makarna
-tags: [yemek, makarna, firin, premium]
+title: Ağlayan Pasta
+description:
+tags: [tatli, atistirma, firin]
 difficulty: 0.1
 taste: 0.3
 duration: 15
