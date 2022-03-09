@@ -1,7 +1,7 @@
 ---
 title: Kinoa Bowl
 description: Kinoalı avokadolu salata
-tags: [yemek, vegan, atistirma]
+tags: [yemek, diyet, atistirma]
 difficulty: 0.1
 taste: 0.3
 duration: 15

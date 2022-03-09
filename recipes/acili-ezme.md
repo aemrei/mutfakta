@@ -1,7 +1,7 @@
 ---
 title: Acılı Ezme
 description: Domatesli kebap yancısı ezme
-tags: [yemek, meze, sebze]
+tags: [yemek, meze, sebze, aci]
 difficulty: 0.3
 taste: 0.5
 duration: 10

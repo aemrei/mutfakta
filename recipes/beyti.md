@@ -1,7 +1,7 @@
 ---
 title: Beyti
 description: Beyti gibi Beyti
-tags: [yemek, et]
+tags: [yemek, kiyma]
 difficulty: 0.7
 taste: 0.8
 duration: 55

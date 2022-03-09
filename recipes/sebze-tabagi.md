@@ -1,7 +1,7 @@
 ---
 title: Sebze Tabağı
 description:
-tags: [yemek, vegan]
+tags: [yemek, diyet]
 difficulty: 0.1
 taste: 0.3
 duration: 15

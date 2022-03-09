@@ -1,7 +1,7 @@
 ---
 title: Sulu Patates
 description: Temel yemek
-tags: [yemek, ocak]
+tags: [yemek, ocak, sebze]
 difficulty: 0.1
 taste: 0.3
 duration: 15

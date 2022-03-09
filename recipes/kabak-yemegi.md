@@ -1,7 +1,7 @@
 ---
 title: Kabak Yemeği
 description:
-tags: [yemek, sebze]
+tags: [yemek, sebze, diyet]
 difficulty: 0.1
 taste: 0.3
 duration: 15

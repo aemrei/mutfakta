@@ -1,7 +1,7 @@
 ---
 title: Kilis Tava
 description:
-tags: [yemek, et, firin]
+tags: [yemek, kiyma, firin]
 difficulty: 0.1
 taste: 0.3
 duration: 15

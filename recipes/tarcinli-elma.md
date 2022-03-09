@@ -1,7 +1,7 @@
 ---
 title: Tarçınlı Elma
 description:
-tags: [atistirma]
+tags: [atistirma, meyve]
 difficulty: 0.1
 taste: 0.3
 duration: 15

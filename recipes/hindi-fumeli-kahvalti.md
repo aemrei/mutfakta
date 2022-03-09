@@ -1,7 +1,7 @@
 ---
 title: Hindi Fümeli Kahvaltı
 description:
-tags: [kahvalti, hindi]
+tags: [kahvalti, et]
 difficulty: 0.1
 taste: 0.3
 duration: 15

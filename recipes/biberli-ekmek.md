@@ -1,7 +1,7 @@
 ---
 title: Biberli Ekmek
 description:
-tags: [kahvalti, refika]
+tags: [kahvalti, hamurisi, refika]
 difficulty: 0.1
 taste: 0.3
 duration: 15

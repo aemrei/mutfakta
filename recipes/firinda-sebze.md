@@ -1,7 +1,7 @@
 ---
 title: Fırında Sebze
 description: Sağlıklı sebzeler
-tags: [yemek, sebze, firin]
+tags: [yemek, sebze, firin, diyet]
 difficulty: 0.1
 taste: 0.3
 duration: 15

@@ -14,19 +14,26 @@ export const filterSections = [
   {
     title: "İçindekiler",
     items: [
+      { id: "bakliyat", text: "Bakliyat" },
       { id: "et", text: "Et" },
+      { id: "kiyma", text: "Kıyma" },
+      { id: "balik", text: "Balık" },
       { id: "sebze", text: "Sebze" },
-      { id: "sut", text: "Süt" },
+      { id: "sut", text: "Süt Ürünleri" },
+      { id: "yumurta", text: "Yumurta" },
       { id: "meyve", text: "Meyve" },
     ],
   },
   {
     title: "Tür",
     items: [
-      { id: "sicak", text: "Sıcak" },
-      { id: "soguk", text: "Soguk" },
+      { id: "corba", text: "Çorba" },
+      { id: "salata", text: "Salata" },
       { id: "tatli", text: "Tatlı" },
-      { id: "vegan", text: "Vegan" },
+      { id: "aci", text: "Acı" },
+      { id: "sicak", text: "Sıcak" },
+      { id: "soguk", text: "Soğuk" },
+      { id: "diyet", text: "Diyet" },
     ],
   },
   {
@@ -34,6 +41,9 @@ export const filterSections = [
     items: [
       { id: "firin", text: "Fırın" },
       { id: "ocak", text: "Ocak" },
+      { id: "tava", text: "Tava" },
+      { id: "tencere", text: "Tencere" },
+      { id: "blender", text: "Blender" },
       { id: "buzdolabı", text: "Buzdolabı" },
       { id: "tostmakinesi", text: "Tost Makinesi" },
     ],

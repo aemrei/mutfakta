@@ -1,7 +1,7 @@
 ---
 title: Bal Kaymak
 description: Tatlı bir kahvaltı
-tags: [kahvalti]
+tags: [kahvalti, soguk]
 difficulty: 0.1
 taste: 0.5
 duration: 1
