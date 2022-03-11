@@ -1,7 +1,7 @@
 ---
 title: Nohut Burger
 description: Vegan burger
-tags: [yemek, diyet, bakliyat]
+tags: [yemek, diyet, bakliyat, premium]
 difficulty: 0.1
 taste: 0.3
 duration: 15

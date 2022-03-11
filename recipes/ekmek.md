@@ -20,13 +20,14 @@ yt: [cOYo1LZ6o8k]
 
 ## Yapılışı
 
+1. Unu elekten eleyerek karıştırma kabına koyun.
 1. Unun içerisine su koyun ve _8dk_ yoğurun.
-2. Sonra içerisine tuz koyarak _2dk_ yoğurun.
-3. Maya koyarak yoğurun, _yarım saat_ mayalansın.
-4. 250glık bezeler halinde bölün.
-5. Altını ve üstünü unlayarak _20dk_ dinlendirin.
-6. Ekmek şeklini vererek tepsiye koyun.
-7. Üstünü bezle kapatarak _1 saat 15dk_ dinlendirin.
-8. Üstüne kesik atın.
-9. Fırını 200 dereceye ayarlayıp, altına su koyun.
-10. Fırın ısınınca orta göze koyarak üstü kızarana kadar pişirin.
+1. Sonra içerisine tuz koyarak _2dk_ yoğurun.
+1. Maya koyarak yoğurun, _yarım saat_ mayalansın.
+1. 250glık bezeler halinde bölün.
+1. Altını ve üstünü unlayarak _20dk_ dinlendirin.
+1. Ekmek şeklini vererek tepsiye koyun.
+1. Üstünü bezle kapatarak _1 saat 15dk_ dinlendirin.
+1. Üstüne kesik atın.
+1. Fırını 200 dereceye ayarlayıp, altına su koyun.
+1. Fırın ısınınca orta göze koyarak üstü kızarana kadar pişirin.

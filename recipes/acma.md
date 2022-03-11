@@ -10,8 +10,12 @@ image:
 yt: []
 ---
 
+## Malzemeler
+
 - 3 su bardağı ılık `süt`
 - 1 su bardağı `sıvı yağ`
 - 2 `yumurta` (1 tanesinin sarısı üstüne)
 - 3 yemek kaşığı `şeker`
 - 1,5 tatlı kaşığı `tuz`
+
+## Yapılışı

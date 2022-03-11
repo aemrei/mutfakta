@@ -1,7 +1,7 @@
 ---
 title: Tako
 description:
-tags: [yemek, et]
+tags: [yemek, et, ocak, premium]
 difficulty: 0.1
 taste: 0.3
 duration: 15
