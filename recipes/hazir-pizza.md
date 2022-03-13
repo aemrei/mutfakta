@@ -1,6 +1,6 @@
 ---
-title: Pizza
-description: Fırında hazır pizza
+title: Hazır Pizza
+description: Dondurulmuş pizza
 tags: [firin, yemek]
 difficulty: 0.1
 taste: 0.3
