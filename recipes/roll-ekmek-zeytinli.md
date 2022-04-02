@@ -1,12 +1,12 @@
 ---
-title: Roll Ekmek
-description: Minik minik ekmekler
+title: Zeytinli Roll Ekmek
+description: Zeytin ve kekikli
 tags: [kahvalti, yemek, hamurisi, firin]
 difficulty: 0.4
 taste: 0.8
 duration: 200
 date: "2022-03-03T05:35:07.322Z"
-image: roll-ekmek-zeytinli.jpg
+image: roll-ekmek-zeytinli.jpeg
 yt: [EoApGWFsJA0]
 ---
 
