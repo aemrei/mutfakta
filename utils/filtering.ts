@@ -44,6 +44,7 @@ export const filterSections = [
       { id: "firin", text: "Fırın" },
       { id: "ocak", text: "Ocak" },
       { id: "tava", text: "Tava" },
+      { id: "airfryer", text: "Air Fryer" },
       { id: "tencere", text: "Tencere" },
       { id: "blender", text: "Blender" },
       { id: "buzdolabı", text: "Buzdolabı" },
