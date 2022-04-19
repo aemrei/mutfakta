@@ -1,7 +1,7 @@
 ---
-title: Menemen
-description: Soğanlı
-tags: [kahvalti, yemek, sebze]
+title: Patatesli yumurta
+description: Kahvaltı kurtarıcısı
+tags: [kahvalti, yumurta, ocak]
 difficulty: 0.1
 taste: 0.3
 duration: 15
@@ -11,5 +11,7 @@ yt: []
 ---
 
 ## Malzemeler
+
+- Yumurta
 
 ## Yapılışı

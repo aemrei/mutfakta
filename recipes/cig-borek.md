@@ -1,7 +1,7 @@
 ---
-title: Menemen
-description: Soğanlı
-tags: [kahvalti, yemek, sebze]
+title: Çiğ Börek
+description: Eskişehir usulü
+tags: [kahvalti,atistirmalik,et,ocak]
 difficulty: 0.1
 taste: 0.3
 duration: 15
