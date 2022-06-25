@@ -1,7 +1,7 @@
 ---
-title:
-description:
-tags: []
+title: Gazpacho
+description: Soğuk domates çorbası
+tags: [kahvalti, soguk, sebze]
 difficulty: 0.1
 taste: 0.3
 duration: 15
