@@ -15,22 +15,24 @@ yt: []
 - 4 adet ekmek
 - beyaz peynir
 - kaşar peynir
-- tulum peyniri
+- Labne Peynir
 - 1 adet domates
 - 1 adet salatalık
 - 4 adet ince yeşil biber
 - 4 yaprak marul
+- Fesleğen
 - 8 dal maydanoz
 
 ## Yapılışı
 
 1. Tüm sebzeleri yıkayıp kurutuyoruz.
-2. Domatesi ince ince yuvarlak kesiyoruz.
-3. Salatalıkları boylamasına dilimliyoruz.
-4. Cabata ekmeğini enlemesine ortadan ikiye bölüyoruz.
-5. En alt kata peyniri koyuyoruz. (Bu önemli ekmeğin sebzeler tarafından ıslanmasını önlüyor)
-6. İstediğiniz peynir çeşidini kullanabilirsiniz.
-7. Üzerine salatalık onun üzerine marul ve domatesi koyuyoruz.
-8. Domatesin üstüne yeşil biberi en üste de maydanozları koyuyoruz.
-9. Bu şekilde streç filme sarıp buzdolabına kaldırıp ertesi gün tüketebilirsiniz.
-10. Domatesin sebzeler arasında kalmasına dikkat ederseniz ekmek ıslanmayacaktır.
+1. Domatesi ince ince yuvarlak kesiyoruz.
+1. Salatalıkları boylamasına dilimliyoruz.
+1. Cabata ekmeğini enlemesine ortadan ikiye bölüyoruz.
+1. Üst kısmına labne peyniri sürüyoruz.
+1. En alt kata peyniri koyuyoruz. (Bu önemli ekmeğin sebzeler tarafından ıslanmasını önlüyor)
+1. İstediğiniz peynir çeşidini kullanabilirsiniz.
+1. Üzerine salatalık onun üzerine marul ve domatesi koyuyoruz.
+1. Domatesin üstüne yeşil biberi en üste de maydanozları koyuyoruz.
+1. Bu şekilde streç filme sarıp buzdolabına kaldırıp ertesi gün tüketebilirsiniz.
+1. Domatesin sebzeler arasında kalmasına dikkat ederseniz ekmek ıslanmayacaktır.
